@@ -13,6 +13,11 @@ eggs/
 lib/
 lib64/
 parts/
+
+# Video files (submitted separately)
+*.mp4
+*.mov
+*.avi
 sdist/
 var/
 wheels/

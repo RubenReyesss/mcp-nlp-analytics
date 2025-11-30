@@ -25,7 +25,11 @@ Traditional "use Claude once and move on" workflows do not keep historical conte
 
 ## 🎥 Demo Video
 
-[Watch Demo](data/demo.mp4)
+A demo video (3-4 minutes) is included with the hackathon submission showing:
+- Live sentiment analysis of customer conversations
+- Risk detection and churn prediction
+- MCP tool invocation via Claude
+- Real-time alerts and reporting
 
 ---
 
