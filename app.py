@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-App.py para Hugging Face Spaces - Demonstración interactiva del MCP NLP Server
-"""
+
 
 import streamlit as st
 import sqlite3

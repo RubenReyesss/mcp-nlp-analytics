@@ -14,7 +14,7 @@ Sentiment Evolution Tracker is an enterprise-ready monitoring stack that runs as
 
 ## Why This Exists
 
-Traditional “use Claude once and move on” workflows do not keep historical context, trigger alerts, or generate portfolio-level insights. Sentiment Evolution Tracker solves that by providing:
+Traditional "use Claude once and move on" workflows do not keep historical context, trigger alerts, or generate portfolio-level insights. Sentiment Evolution Tracker solves that by providing:
 
 - Automated trend detection (RISING / DECLINING / STABLE)
 - Churn probability scoring with configurable thresholds
@@ -22,6 +22,12 @@ Traditional “use Claude once and move on” workflows do not keep historical c
 - Real-time alerts when risk exceeds 70%
 - ASCII and HTML visualizations for demos and stakeholders
 - Seven MCP tools that Claude (or any MCP-compatible LLM) can invoke on demand
+
+## 🎥 Demo Video
+
+[Watch Demo](data/demo.mp4)
+
+---
 
 ## Installation
 
