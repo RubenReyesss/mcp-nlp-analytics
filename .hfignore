@@ -1,0 +1,68 @@
+# Hugging Face Space ignore file
+# Exclude unnecessary files from HF Space deployment
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# System
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Large files (video, database backups)
+*.mp4
+*.mov
+*.avi
+*.db.backup
+data/*.db.old
+
+# Logs
+*.log
+mcp_server.log
+
+# Temporary files
+*.tmp
+*.temp
+.env
+.env.local
