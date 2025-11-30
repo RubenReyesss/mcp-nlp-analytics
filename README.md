@@ -6,6 +6,8 @@ colorTo: blue
 sdk: static
 app_file: index.html
 pinned: false
+tags:
+  - building-mcp-track-01
 ---
 
 # Sentiment Evolution Tracker – MCP Monitoring Stack
@@ -30,6 +32,44 @@ A demo video (3-4 minutes) is included with the hackathon submission showing:
 - Risk detection and churn prediction
 - MCP tool invocation via Claude
 - Real-time alerts and reporting
+
+---
+
+## How to Use
+
+### Quick Start (5 minutes)
+
+1. **Clone and install:**
+   ```powershell
+   git clone https://github.com/RubenReyesss/mcp-nlp-analytics.git
+   cd mcp-nlp-server
+   pip install -r requirements.txt
+   python -m textblob.download_corpora
+   python -m nltk.downloader punkt averaged_perceptron_tagger
+   ```
+
+2. **Populate demo data:**
+   ```powershell
+   python init_db.py
+   python tools/populate_demo_data.py
+   ```
+
+3. **View dashboard:**
+   ```powershell
+   python tools/dashboard.py
+   ```
+
+4. **Generate HTML report:**
+   ```powershell
+   python tools/generate_report.py
+   # Opens data/reporte_clientes.html in your browser
+   ```
+
+5. **Integrate with Claude Desktop:**
+   - Edit `config/claude_desktop_config.json` with your actual path
+   - Restart Claude Desktop
+   - Start the MCP server: `python src/mcp_server.py`
+   - Now Claude can access all 7 sentiment analysis tools
 
 ---
 
@@ -112,3 +152,20 @@ Restart Claude Desktop after editing the file. Once connected, the seven tools a
 - ✅ Tests for the `save_analysis` workflow (`tests/test_save_analysis.py`)
 
 Run `python tools\dashboard.py` or open the generated HTML report to verify data before your demo, then start the MCP server and launch Claude Desktop to show the agentic workflow in real time.
+
+---
+
+## Team
+
+| Role | Contributor | GitHub |
+|------|-------------|--------|
+| **Developer** | RubenReyesss | [@RubenReyesss](https://github.com/RubenReyesss) |
+
+---
+
+## Track
+
+This project is submitted to **Track 1: Building MCPs** (`building-mcp-track-01`).
+
+It demonstrates a production-ready MCP server that extends Claude's capabilities with persistent analytics, risk prediction, and alerting—solving the limitation that Claude lacks memory, database writes, and automated monitoring.
+
