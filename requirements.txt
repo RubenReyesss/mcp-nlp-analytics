@@ -1,0 +1,19 @@
+# Core MCP Framework
+mcp==0.1.0
+
+# Natural Language Processing
+textblob==0.17.1    # Sentiment analysis
+nltk==3.8.1         # NLP utilities
+
+# Dashboard & Reporting
+pandas==2.1.4
+plotly==5.22.0
+streamlit==1.39.0
+
+# Database
+# SQLite3 is included with Python
+
+# Optional: for development/testing
+# pytest==7.4.0
+# black==23.9.0
+# pylint==2.17.5

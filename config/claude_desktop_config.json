@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "sentiment-tracker": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\Ruben Reyes\\Desktop\\MCP_1stHF\\mcp-nlp-server\\src\\mcp_server.py"
+      ],
+      "env": {
+        "PYTHONPATH": "C:\\Users\\Ruben Reyes\\Desktop\\MCP_1stHF\\mcp-nlp-server\\src"
+      }
+    }
+  }
+}

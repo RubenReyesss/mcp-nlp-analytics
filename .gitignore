@@ -1,0 +1,79 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+*.egg
+.installed.cfg
+pip-wheel-metadata/
+
+# Testing and coverage
+.pytest_cache/
+pytest_output.txt
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.code-workspace
+*~
+
+# Local configuration
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Databases and analytics output
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+data/reporte_clientes.html
+
+# SQLite anywhere else
+*.db
+*.sqlite
+*.sqlite3
+
+# Tool caches
+.gradio/
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Temporary files
+temp_*.txt
+*.tmp
+*.log
