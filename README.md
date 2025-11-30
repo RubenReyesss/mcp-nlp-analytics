@@ -27,10 +27,14 @@ Traditional "use Claude once and move on" workflows do not keep historical conte
 
 ## 🎥 Demo Video
 
-A demo video (3-4 minutes) is included with the hackathon submission showing:
+A demo video (3-4 minutes) showing live sentiment analysis, risk detection, and MCP integration with Claude:
+
+**[Watch on YouTube](https://youtu.be/h2tNu2KTPQk)**
+
+The video demonstrates:
 - Live sentiment analysis of customer conversations
 - Risk detection and churn prediction
-- MCP tool invocation via Claude
+- MCP tool invocation via Claude Desktop
 - Real-time alerts and reporting
 
 ---
@@ -169,3 +173,25 @@ This project is submitted to **Track 1: Building MCPs** (`building-mcp-track-01`
 
 It demonstrates a production-ready MCP server that extends Claude's capabilities with persistent analytics, risk prediction, and alerting—solving the limitation that Claude lacks memory, database writes, and automated monitoring.
 
+---
+
+## 📱 Social Media Post
+
+**Announcement on LinkedIn:**
+
+[Read the full post on LinkedIn](https://www.linkedin.com/posts/rubenreyesparra_mcp-nlp-analytics-a-hugging-face-space-activity-7400976539959390208-SG3Q?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFIWAmYBYY2kpr1rhopcOJoKJgl2HvUdM-8)
+
+Featured in: MCP 1st Birthday Hackathon
+
+---
+
+## Resources
+
+- **GitHub Repository:** https://github.com/RubenReyesss/mcp-nlp-analytics
+- **Hugging Face Space:** https://huggingface.co/spaces/MCP-1st-Birthday/mcp-nlp-analytics
+- **Demo Video:** https://youtu.be/h2tNu2KTPQk
+- **LinkedIn Post:** https://www.linkedin.com/posts/rubenreyesparra_mcp-nlp-analytics-a-hugging-face-space-activity-7400976539959390208-SG3Q
+
+---
+
+Made with ❤️ for the Anthropic MCP 1st Birthday Hackathon
