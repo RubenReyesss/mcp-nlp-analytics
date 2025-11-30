@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MCP NLP Analytics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 2rem;
+        line-height: 1.6;
+        max-width: 900px;
+      }
+      h1 {
+        color: #0ea5e9;
+      }
+      code {
+        background: rgba(15, 23, 42, 0.08);
+        padding: 0.15rem 0.35rem;
+        border-radius: 0.25rem;
+        font-size: 0.95rem;
+      }
+      a {
+        color: #312e81;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>MCP NLP Analytics Hackathon Delivery</h1>
+      <section>
+        <p>
+          This Hugging Face Space hosts the <strong>Sentiment Evolution Tracker</strong>
+          MCP server codebase. The project powers a conversational analytics
+          workflow that enriches customer support teams with local NLP, risk
+          forecasting, and Model Context Protocol tools.
+        </p>
+      </section>
+      <section>
+        <h2>How to Run Locally</h2>
+        <ol>
+          <li>Clone the repository from GitHub or this Space.</li>
+          <li>Install dependencies with <code>pip install -r requirements.txt</code>.</li>
+          <li>Run <code>python init_db.py</code> followed by <code>python tools/populate_demo_data.py</code>.</li>
+          <li>
+            Launch the MCP server with <code>python src/mcp_server.py</code> and
+            connect from Claude Desktop using the provided
+            <code>config/claude_desktop_config.json</code>.
+          </li>
+        </ol>
+        <p>
+          For a full walkthrough consult
+          <a href="README.md">README.md</a> and the documentation set inside the
+          <code>docs/</code> directory.
+        </p>
+      </section>
+      <section>
+        <h2>Key Resources</h2>
+        <ul>
+          <li><a href="README.md">Project README</a></li>
+          <li><a href="docs/QUICK_START.md">Quick Start Guide</a></li>
+          <li><a href="docs/ARCHITECTURE.md">Architecture Overview</a></li>
+          <li><a href="docs/EXECUTIVE_SUMMARY.md">Executive Summary</a></li>
+        </ul>
+      </section>
+      <section>
+        <p>
+          This Space is configured as <strong>Static</strong> to expose the full MCP
+          code submission required for the Anthropic MCP 1st Birthday Hackathon.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

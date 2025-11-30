@@ -1,3 +1,13 @@
+---
+title: MCP NLP Analytics
+emoji: 📊
+colorFrom: indigo
+colorTo: blue
+sdk: static
+app_file: index.html
+pinned: false
+---
+
 # Sentiment Evolution Tracker – MCP Monitoring Stack
 
 Sentiment Evolution Tracker is an enterprise-ready monitoring stack that runs as a Model Context Protocol (MCP) server. It combines local sentiment analytics, churn prediction, alerting, and reporting, and can operate standalone or alongside Claude Desktop as an intelligent assistant.
