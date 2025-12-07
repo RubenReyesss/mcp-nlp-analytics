@@ -306,7 +306,10 @@ Incluí documentación en múltiples niveles para diferentes audiencias:
 
 ### 🎥 Video de Demostración
 
-- **Contenido**: 3-5 minutos demostrando:
+**Ver en YouTube**: [Demo del Sistema MCP - Análisis de Sentimiento de Clientes](https://youtu.be/h2tNu2KTPQk)
+
+- **Duración**: 3-5 minutos
+- **Contenido demostrado**:
   - Análisis de sentimiento en vivo
   - Detección de riesgos funcionando
   - Herramientas MCP invocadas desde Claude
@@ -527,6 +530,8 @@ El resultado es que Claude ahora puede ser un verdadero asistente empresarial pa
 **Repositorio GitHub**: [RubenReyesss/mcp-nlp-analytics](https://github.com/RubenReyesss/mcp-nlp-analytics)
 
 **Hugging Face Space**: [MCP-1st-Birthday/mcp-nlp-analytics](https://huggingface.co/spaces/MCP-1st-Birthday/mcp-nlp-analytics)
+
+**Video de Demostración**: [YouTube - Demo del Sistema MCP](https://youtu.be/h2tNu2KTPQk)
 
 **Especificación MCP**: [modelcontextprotocol.io](https://modelcontextprotocol.io/)
 
