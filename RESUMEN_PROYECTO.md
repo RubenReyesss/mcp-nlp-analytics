@@ -67,7 +67,30 @@ Sin un sistema conectado, es imposible detectar esto automáticamente. Claude po
 
 ## Diagrama de Arquitectura
 
-![Arquitectura del Sistema MCP](./docs/mermaid.png)
+```mermaid
+graph TD
+    A["Claude Desktop"] -->|"MCP Protocol (stdio)"| B["MCP Server"]
+    B -->|"Route Request"| C["Tool Router"]
+    
+    C -->|"analyze_sentiment"| D["Sentiment Analyzer"]
+    C -->|"detect_signals"| E["Pattern Detector"]
+    C -->|"predict_action"| F["Risk Predictor"]
+    C -->|"get_history"| G["Database Manager"]
+    C -->|"get_high_risk"| G
+    C -->|"get_statistics"| G
+    C -->|"save_analysis"| G
+    
+    D -->|"Score + Trend"| H["Data Pipeline"]
+    E -->|"Risk Signals"| H
+    F -->|"Churn Probability"| H
+    
+    H -->|"Persist Results"| I["SQLite Database"]
+    I -->|"3 Tables"| J["customers | conversations | alerts"]
+    
+    G -->|"Query Data"| I
+    G -->|"JSON Response"| C
+    C -->|"Return to User"| A
+```
 
 **Descripción Visual**: El diagrama muestra el flujo completo desde Claude Desktop hasta la base de datos SQLite, pasando por el MCP Server, Tool Router, y los 4 módulos principales (Sentiment Analyzer, Pattern Detector, Risk Predictor, Database Manager).
 
