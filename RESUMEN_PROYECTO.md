@@ -67,32 +67,27 @@ Sin un sistema conectado, es imposible detectar esto automáticamente. Claude po
 
 ## Diagrama de Arquitectura
 
-```mermaid
-graph TD
-    A["Claude Desktop"] -->|"MCP Protocol (stdio)"| B["MCP Server"]
-    B -->|"Route Request"| C["Tool Router"]
-    
-    C -->|"analyze_sentiment"| D["Sentiment Analyzer"]
-    C -->|"detect_signals"| E["Pattern Detector"]
-    C -->|"predict_action"| F["Risk Predictor"]
-    C -->|"get_history"| G["Database Manager"]
-    C -->|"get_high_risk"| G
-    C -->|"get_statistics"| G
-    C -->|"save_analysis"| G
-    
-    D -->|"Score + Trend"| H["Data Pipeline"]
-    E -->|"Risk Signals"| H
-    F -->|"Churn Probability"| H
-    
-    H -->|"Persist Results"| I["SQLite Database"]
-    I -->|"3 Tables"| J["customers | conversations | alerts"]
-    
-    G -->|"Query Data"| I
-    G -->|"JSON Response"| C
-    C -->|"Return to User"| A
-```
+![Arquitectura del Sistema MCP - Flujo Completo](./mermaid_arquitectura.png)
 
-**Descripción Visual**: El diagrama muestra el flujo completo desde Claude Desktop hasta la base de datos SQLite, pasando por el MCP Server, Tool Router, y los 4 módulos principales (Sentiment Analyzer, Pattern Detector, Risk Predictor, Database Manager).
+**Descripción Visual**: El diagrama muestra el flujo completo del sistema:
+
+1. **Claude Desktop** (arriba) → Invoca herramientas MCP
+2. **MCP Server** (centro) → Orquesta todas las operaciones  
+3. **Tool Router** → Distribuye a 4 módulos principales:
+   - **Sentiment Analyzer**: Calcula puntuación 0-100
+   - **Pattern Detector**: Identifica señales de riesgo (4 tipos)
+   - **Risk Predictor**: Predice probabilidad de churn
+   - **Database Manager**: Gestiona persistencia en SQLite
+
+4. **Data Pipeline** → Procesa y valida resultados
+5. **SQLite Database** → 3 tablas normalizadas (customers, conversations, alerts)
+6. **Retorno a Claude** → JSON estructurado
+
+**Características del Flujo**:
+- ✅ Protocolo MCP (stdio) - Seguro y local
+- ✅ 7 herramientas independientes
+- ✅ Persistencia entre sesiones
+- ✅ Escalable a 1000+ clientes
 
 ### Cómo Funciona el Flujo
 
