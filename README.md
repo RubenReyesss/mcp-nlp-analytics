@@ -148,12 +148,28 @@ Restart Claude Desktop after editing the file. Once connected, the seven tools a
 - TextBlob 0.17.x + NLTK 3.8.x
 - Chart.js for optional HTML visualizations
 
+## 📚 Documentation
+
+For a comprehensive technical explanation of the NLP processing, architecture, and MCP integration, see:
+
+**[📖 Technical Deep Dive](./TECHNICAL_DOCUMENTATION.md)**
+
+This document covers:
+- **NLP & Processing**: Why sentiment evolution tracking matters, hybrid scoring approach, and real business value
+- **Architecture Diagram**: Complete system flow (Mermaid visualization)
+- **Technical Details**: Model stack, tool implementations, database schema, scoring algorithms
+- **MCP Explained**: What is MCP, why it matters, and how it gives Claude persistent memory
+- **Implementation Highlights**: Trend detection, churn prediction, multilingual support
+
+---
+
 ## Status
 
 - ✅ Production-style folder layout
 - ✅ Deterministic demo dataset for the hackathon video
 - ✅ Comprehensive English documentation
 - ✅ Tests for the `save_analysis` workflow (`tests/test_save_analysis.py`)
+- ✅ Technical deep dive with NLP explanations and architecture diagrams
 
 Run `python tools\dashboard.py` or open the generated HTML report to verify data before your demo, then start the MCP server and launch Claude Desktop to show the agentic workflow in real time.
 
